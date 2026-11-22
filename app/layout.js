@@ -1,9 +1,38 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'SPC Labs — Statistical Process Control',
-  description: 'Systematic momentum trading. Algorithmic strategies for capacity-constrained markets.',
-  keywords: 'algorithmic trading, quantitative finance, momentum, systematic trading',
+  metadataBase: new URL('https://spclabs.ca'),
+  title: 'SPC Labs — Systematic Quantitative Trading',
+  description: 'SPC Capital Inc. — proprietary systematic momentum trading. Algorithmic strategies built on statistical process control. Calgary, Alberta.',
+  keywords: 'algorithmic trading, quantitative finance, momentum, systematic trading, statistical process control, Calgary',
+  authors: [{ name: 'SPC Capital Inc.' }],
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+  },
+  openGraph: {
+    title: 'SPC Labs — Systematic Quantitative Trading',
+    description: 'Proprietary systematic momentum trading. Calgary, Alberta.',
+    url: 'https://spclabs.ca',
+    siteName: 'SPC Labs',
+    locale: 'en_CA',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'SPC Labs — Systematic Quantitative Trading',
+    description: 'Proprietary systematic momentum trading. Calgary, Alberta.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
+
+export const viewport = {
+  themeColor: '#050508',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({ children }) {

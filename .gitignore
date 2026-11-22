@@ -17,5 +17,11 @@
 # debug
 npm-debug.log*
 
+# dev artifacts (logo generation, screenshots)
+render_logo.py
+public/spc_logo_preview.jpg
+preview_*.png
+shoot.js
+
 # env
 .env*.local
