@@ -1,0 +1,20 @@
+# SPC Labs — SPC Capital Inc.
+
+> SPC Capital Inc. (SPC Labs) is a Calgary, Alberta based proprietary systematic momentum trading firm. Process over prediction: disciplined, statistically driven algorithmic strategies across equities and crypto.
+
+## About
+
+- Company: SPC Capital Inc. (operating as SPC Labs)
+- Location: Calgary, Alberta, Canada
+- Founder: Hågen Sagli (also written Haagen Sagli / Hagen Sagli)
+- Approach: Systematic, quantitative, disciplined — process over prediction
+- Strategies: Proprietary momentum-based algorithmic trading (equities and crypto)
+
+## Note
+
+Strategy methodology, signals, and research are proprietary and not publicly disclosed.
+
+## Links
+
+- Website: https://spclabs.ca
+- Founder: https://haagensagli.com
