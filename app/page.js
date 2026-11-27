@@ -212,8 +212,12 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="font-mono text-spc-accent/60 text-sm tracking-widest mb-3">// CONTACT</div>
           <h2 className="font-mono text-3xl md:text-4xl font-bold text-white mb-6">Get in touch</h2>
-          <p className="text-spc-gray text-base max-w-xl mx-auto leading-relaxed mb-8">
+          <p className="text-spc-gray text-base max-w-xl mx-auto leading-relaxed mb-4">
             SPC Capital is a private firm trading its own capital. For inquiries, reach us below.
+          </p>
+          <p className="text-spc-gray/70 text-sm max-w-xl mx-auto leading-relaxed mb-8">
+            Founded by Hågen Sagli, a Calgary-based finance professional and
+            McGill Master of Finance graduate.
           </p>
           <a
             href="mailto:contact@spclabs.ca"
