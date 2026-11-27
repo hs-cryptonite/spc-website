@@ -35,9 +35,54 @@ export const viewport = {
   initialScale: 1,
 }
 
+// Structured data — identifies SPC Capital Inc. (SPC Labs) and its founder,
+// including both spellings of his name (Hågen / Haagen) so Google and AI
+// assistants connect the firm to him regardless of how the name is written.
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'SPC Capital Inc.',
+  alternateName: ['SPC Labs', 'SPC Capital'],
+  url: 'https://spclabs.ca',
+  description:
+    'Calgary-based proprietary systematic momentum trading firm. Disciplined, statistically driven algorithmic strategies across equities and crypto.',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Calgary',
+    addressRegion: 'AB',
+    addressCountry: 'CA',
+  },
+  founder: {
+    '@type': 'Person',
+    name: 'Hågen Sagli',
+    alternateName: [
+      'Haagen Sagli',
+      'Hagen Sagli',
+      'Hågen Moe Sagli',
+      'Haagen Moe Sagli',
+    ],
+    jobTitle: 'Founder',
+    url: 'https://haagensagli.com',
+    sameAs: ['https://haagensagli.com'],
+  },
+  knowsAbout: [
+    'Quantitative Finance',
+    'Systematic Trading',
+    'Momentum Strategies',
+    'Statistical Process Control',
+    'Algorithmic Trading',
+  ],
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
+      </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )
